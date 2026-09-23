@@ -285,6 +285,19 @@
   .event-date span{ font-size:9.5px; color:var(--text-faint); letter-spacing:.06em; margin-top:2px; }
   .event-time{ font-size:12.5px; color:var(--text-faint); margin-top:14px; }
 
+  .social-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+  .social-box{
+    aspect-ratio:1/1; border:1px solid var(--line); background:var(--panel);
+    box-shadow:0 0 0 1px rgba(181,131,63,.2), 0 0 32px -10px rgba(181,131,63,.6);
+    transition: box-shadow .25s ease, border-color .25s ease, transform .25s ease;
+    background-size:cover; background-position:center;
+    display:block;
+  }
+  .social-box:hover{
+    border-color:var(--gold); transform:translateY(-3px);
+    box-shadow:0 0 0 1px var(--gold-bright), 0 0 46px -6px rgba(217,167,92,.8);
+  }
+
   /* ---------- DONAT ---------- */
   .donat-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; align-items:stretch; }
   .tier{
@@ -383,6 +396,7 @@
     .board-form{ position:static; }
     .board-posts{ grid-template-columns:1fr 1fr; }
     .events-grid{ grid-template-columns:1fr; }
+    .social-grid{ grid-template-columns:repeat(3,1fr); }
     .bento{ grid-template-columns:1fr 1fr; }
     .bento .card{ grid-column:span 2 !important; }
   }
@@ -422,6 +436,7 @@
     .rule-item{ grid-template-columns:32px 1fr; gap:14px; padding:20px 0; }
     .rule-item .num{ font-size:20px; }
     .events-grid{ grid-template-columns:1fr; }
+    .social-grid{ grid-template-columns:repeat(2,1fr); gap:12px; }
     .donat-grid{ gap:16px; }
     .tier{ padding:28px 22px; }
     .subnav{ margin-bottom:32px; }
@@ -547,6 +562,7 @@
         <button data-sub="rules">Правила</button>
         <button data-sub="support">Поддержка</button>
         <button data-sub="ivents">Ивенты</button>
+        <button data-sub="social">Сссылочкии</button>
       </div>
 
       <!-- NEWS -->
@@ -633,7 +649,24 @@
           </div>
           <div class="rule-item">
             <div class="num">05</div>
-            <div><h4>Слово атамана — закон куреня</h4><p>Внутренние споры решаются атаманом; жалобы выше — только через тикет в поддержку.</p></div>
+            <div><h4 class="zxc322">ПРАВО НА ОБЖАЛОВАНИЕ</h4>
+              <p class="zxc322">Каждый игрок имеет право обжаловать выданное ему наказание или обвинение в нарушении общих правил сервера.</p>
+              <p>Для рассмотрения обжалования необходимо предоставить доказательства произошедшего: <span class="zxc322">откат, видеозапись, скриншоты или другие материалы, позволяющие объективно оценить ситуацию.</span></p>
+              <h4 class="zxc333">Игрок вправе:</h4>
+              <p>Обратиться к администрации для<span class="zxc322"> пересмотра вынесенного решения</span>;</p>
+              <p>Предоставить имеющиеся доказательства произошедшего;</p>
+              <p>Попросить администрацию <span class="zxc322">повторно</span> рассмотреть ситуацию с учётом предоставленных материалов.</p>
+              <p>Если в ходе рассмотрения обжалования будет установлено, что нарушение действительно имело место,<span class="zxc322"> степень наказания может быть увеличена по сравнению с первоначальной.</span></p>
+              <p class="zxc322">Это возможно в случае выявления дополнительных нарушений, обстоятельств или оснований для применения более строгого наказания.</p>
+              <h4></h4>
+              <h4 class="zxc322">!!!Подача обжалования не гарантирует отмену или смягчение наказания!!!</h4>
+            
+            
+            
+            
+            
+            
+            </div>
           </div>
         </div>
       </div>
@@ -643,10 +676,10 @@
         <div class="support-layout">
           <div class="support-note">
             <h3>Как мы помогаем</h3>
-            <p>Тикет рассматривает дежурный есаул в течение часа. Для срочных случаев (травля, читеры) отмечайте тему «Срочно».</p>
+            <p>Тикет рассматривает дежурный в течение часа. Для срочных случаев (травля, читеры) отмечайте тему «Срочно».</p>
             <ul>
-              <li><b>Среднее время ответа</b> — 47 минут</li>
-              <li><b>Работает</b> — круглосуточно</li>
+              <li><b>Среднее время ответа</b> — 35 минут</li>
+              <li><b>Работает</b> — c 9:00 по 23:00</li>
               <li><b>Конфиденциально</b> — видят только модерация и вы</li>
             </ul>
           </div>
@@ -697,6 +730,19 @@
           </div>
         </div>
       </div>
+
+      <div class="subview" id="sub-social">
+        <div class="social-grid">
+          <a class="social-box" href="https://www.tiktok.com/@kazachokkkoff?_r=1&_t=ZS-99RdGMSkOhx" target="_blank" rel="noopener" style="background-image:url('https://i.pinimg.com/1200x/d4/38/0a/d4380ac8949236f9e3bcc9ccd8039684.jpg');"></a> <!--тик ток-->
+          <a class="social-box" href="https://t.me/kazachokkk_off" target="_blank" rel="noopener" style="background-image:url('https://i.pinimg.com/736x/23/6b/34/236b34d36837e3983f496d7db5d1c666.jpg');"></a><!--тг-->
+          <a class="social-box" href="https://www.twitch.tv/kazachokkkkkk" target="_blank" rel="noopener" style="background-image:url('https://i.pinimg.com/736x/b6/18/5e/b6185e01f8f881844b77314a36143671.jpg');"></a><!--твич-->
+          <a class="social-box" href="https://vk.com/kl1mKozachek" target="_blank" rel="noopener" style="background-image:url('https://i.pinimg.com/736x/d6/dd/e2/d6dde2f27f7139b500effe0032abd174.jpg');"></a><!--вк-->
+          <a class="social-box" href="https://steamcommunity.com/id/klimkozachek" target="_blank" rel="noopener" style="background-image:url('https://i.pinimg.com/736x/5f/e8/9d/5fe89dc7ec7f489aeb957ed1c16c8827.jpg');"></a><!--стим-->
+          <a class="social-box" href=" https://www.youtube.com/@Kazachokkk" target="_blank" rel="noopener" style="background-image:url('https://i.pinimg.com/736x/7a/0a/ba/7a0aba20a3f510b574a4df73291e938b.jpg');"></a><!--ютуб-->
+          <a class="social-box" href=" https://boosty.to/kl1mkozachek" target="_blank" rel="noopener" style="background-image:url('https://logosandtypes.com/wp-content/uploads/2025/05/boosty-scaled.png');"></a><!--бусти-->
+          <a class="social-box" href="https://discord.gg/h7UcEVp95Q" target="_blank" rel="noopener" style="background-image:url('https://i.pinimg.com/736x/b5/d4/ce/b5d4ce10a744861ffd3314d20d116976.jpg');"></a><!--дс-->
+        </div>
+      </div>
     </div>
   </section>
 
@@ -705,7 +751,7 @@
     <div class="wrap">
       <div class="eyebrow">Поддержка клуба</div>
       <h2>Донат  УСЛОВНО!!!</h2>
-      <p class="lede">Донат ускоряет развитие сервера — новые площадки, турниры и техническую базу. Статус в куренях он не заменяет.</p>
+      <p class="lede">Донат ускоряет развитие сервера — новые площадки, турниры и техническую базу.</p>
 
       <div class="donat-grid">
         <div class="tier">
@@ -752,7 +798,7 @@
     <div class="wrap">
        <!-- <div class="eyebrow">Группировки сервера</div> -->
       <h2>Фракции (не шарю по этому пока пусто)</h2>
-      <!--  <p class="lede">Каждый курень держит свою территорию в игровых проектах клуба и соревнуется за место в общем рейтинге.</p>
+      <p class="lede">Каждый курень держит свою территорию в игровых проектах клуба и соревнуется за место в общем рейтинге.</p>
 
       <div class="fraction-grid">
         <div class="fraction-card" style="--f-color:#B5833F;">
@@ -778,7 +824,7 @@
         </div>
       </div>
     </div>
-  </section>-->
+  </section>
 
   <!-- ================= BOARD ================= -->
   <section id="view-board" class="view">
